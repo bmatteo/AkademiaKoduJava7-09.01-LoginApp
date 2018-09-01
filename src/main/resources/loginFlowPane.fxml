@@ -6,14 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<FlowPane xmlns="http://javafx.com/javafx"
+<AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="pl.kodu.akademia.controllers.LoginFlowPane">
 
-    <Label fx:id="userLabel" text="User:"/>
-    <TextField fx:id="user"/>
-    <Label fx:id="passLabel" text="Password:"/>
-    <TextField fx:id="password"/>
-    <Button fx:id="login" text="Login"/>
+    <Label fx:id="userLabel" text="User:" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="20"/>
+    <TextField fx:id="user" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="100"/>
+    <Label fx:id="passLabel" text="Password:" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="80"/>
+    <PasswordField fx:id="password" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="100"/>
+    <Button fx:id="login" text="Login" onAction="#authenticate" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="120"/>
 
-</FlowPane>
+</AnchorPane>

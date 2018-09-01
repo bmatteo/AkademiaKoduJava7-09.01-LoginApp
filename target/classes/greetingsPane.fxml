@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.kodu.akademia.controllers.GreetingsPane">
+
+    <Label fx:id="greetings" text="Witamy" AnchorPane.leftAnchor="130" AnchorPane.topAnchor="100"/>
+    <Button fx:id="exit" text="Wyjdz" AnchorPane.leftAnchor="130" AnchorPane.bottomAnchor="50" onAction="#exit"/>
+</AnchorPane>
